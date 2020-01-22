@@ -22,8 +22,7 @@ vagrant up
 
 上記でKali LinuxとTarget(CentOS7)が起動します。
 
-
-![](./docs/images/VirtualBox_-_Warning.png)
+<img src="./docs/images/VirtualBox_Warning.png" width="50%">
 
 ※Kali Linuxは起動時に上記警告が出ますがそのままOKをクリックしてください。
 
