@@ -23,6 +23,10 @@ vagrant up
 上記でKali LinuxとTarget(CentOS7)が起動します。
 
 
+![](./docs/images/VirtualBox_-_Warning.png)
+
+※Kali Linuxは起動時に上記警告が出ますがそのままOKをクリックしてください。
+
 ### VM停止
 
 ```
@@ -37,4 +41,3 @@ VM名を指定することで個別に操作可能です。
 vagrant reload kali
 vagrant reload target
 ```
-
