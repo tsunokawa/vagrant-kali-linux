@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     kali.vm.network "private_network", ip: "192.168.89.1"
     kali.vm.synced_folder ".", "/vagrant", type:"virtualbox"
     kali.vm.provision :shell do |shell|
-      shell.path = "provision-kali-linux.sh"
+      shell.path = "provision-kali.sh"
     end
 #    mysql.vm.provider "virtualbox" do |vb|
 #      vb.cpus = "2"
