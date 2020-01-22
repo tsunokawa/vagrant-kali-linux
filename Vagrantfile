@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     kali.vm.provision :shell do |shell|
       shell.path = "provision-kali.sh"
     end
-#    mysql.vm.provider "virtualbox" do |vb|
+#    kali.vm.provider "virtualbox" do |vb|
 #      vb.cpus = "2"
 #      vb.memory = "1024"
 #    end
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     target.vm.provision :shell do |shell|
       shell.path = "provision-target.sh"
     end
-#    mysql.vm.provider "virtualbox" do |vb|
+#    target.vm.provider "virtualbox" do |vb|
 #      vb.cpus = "2"
 #      vb.memory = "1024"
 #    end
