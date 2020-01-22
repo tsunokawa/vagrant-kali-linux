@@ -34,5 +34,9 @@ unzip v1.9.zip
 rm v1.9.zip
 mv DVWA-1.9/ dvwa
 
+chown root:apache /var/www/html/dvwa/hackable/uploads/
+chmod 775 /var/www/html/dvwa/hackable/uploads/
+sed -i 's/^allow_url_include\ =\ Off/allow_url_include\ =\ On/' /etc/php.ini
+
 systemctl enable httpd
 systemctl start httpd
