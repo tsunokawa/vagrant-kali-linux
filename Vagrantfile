@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
 
   config.vm.define :kali do |kali|
-    kali.vm.box = "offensive-security/kali-linux"
+    kali.vm.box = "kalilinux/rolling"
     kali.vm.hostname = "kali-linux"
     kali.vm.network "private_network", ip: "192.168.89.1"
     kali.vm.synced_folder ".", "/vagrant", type:"virtualbox"
